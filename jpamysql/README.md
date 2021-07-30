@@ -32,6 +32,7 @@ mvn -v
 ---
 
 ### Installed **mysql db**
+![mysql nord](https://user-images.githubusercontent.com/17401732/127609501-8d6593d5-af5f-4f58-b350-5865106fa95b.png)
 
 ---
 
