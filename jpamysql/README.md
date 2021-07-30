@@ -33,8 +33,6 @@ mvn -v
 
 ### Installed **mysql db**
 
-![[mysql nord 1.png]]
-
 ---
 
 Must have a administrator account root/1234 and a schema "nord"
@@ -45,12 +43,15 @@ I use **mysql-installer-community-8.0.26.0.msi** to installed it on Windows 10.
 CREATE SCHEMA `nord` DEFAULT CHARACTER SET utf8 ;
 ```
 
+
+
 ---
 
 ## Create a spring jpa project
 
 I use vscode 
 Spring Initializr: Create Maven Project
+
 - maven
 - java 11
 - spring-boot-starter-data-jpa
@@ -82,3 +83,15 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
 ```
 mvn spring-boot:run
 ```
+
+---
+
+## Focus on
+
+| file                     | description      |
+| ------------------------ | ---------------- |
+| pom.xml                  | dependencies     |
+| JpamysqlApplication.java | spring boot main |
+| application.properties   | connection info  |
+| User.java                | entity           |
+
