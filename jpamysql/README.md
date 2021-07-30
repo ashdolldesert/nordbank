@@ -8,6 +8,8 @@ This is a very simple project only focus on a few things
 2. Setting mysql db connection info
 3. Run it
 
+tags: #spring #jpa #mysql #lombok
+
 ---
 
 ## Goal
