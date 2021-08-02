@@ -17,3 +17,13 @@ Lets try
 
 [localhost:4200/](http://localhost:4200/)
 
+
+
+# Install cleave.js
+
+```
+npm i -S cleave.js ngx-cleave-directive
+```
+
+
+
