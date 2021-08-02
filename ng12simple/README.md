@@ -1,5 +1,24 @@
 # Ng12simple
 
+Getting Started
+
+```
+ng new ng12simple
+```
+
+Run it
+
+```
+cd ng12simple
+ng serve
+```
+
+Lets try
+
+[localhost:4200/](http://localhost:4200/)
+
+# Ng12simple
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Development server
