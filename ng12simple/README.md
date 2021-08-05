@@ -1,4 +1,4 @@
-# Ng12simple
+# Create a new Project
 
 Getting Started
 
@@ -17,9 +17,9 @@ Lets try
 
 [localhost:4200/](http://localhost:4200/)
 
+# Ng12simple
 
-
-# Install cleave.js
+## Install cleave.js
 
 ```
 npm i -S cleave.js ngx-cleave-directive
@@ -45,7 +45,7 @@ found 1 moderate severity vulnerability
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
-# Setting up demo of cleave.js
+## Setting up demo of cleave.js
 
 see the following
 
@@ -54,6 +54,43 @@ see the following
 - app.component.ts
 - app.module.ts
 
-# Demo cleave.js
+## Demo cleave.js
 
 [localhost:4200/](http://localhost:4200/)
+
+## Create new page for cleave.js
+
+```bash
+ng g component cleavejs
+```
+
+Copy and paste app.component.** to cleavejs.component.**
+
+- cleavejs.component.html
+- cleavejs.component.scss
+- cleavejs.component.ts
+
+## Setting up routing for cleave.js
+
+```typescript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CleavejsComponent } from 'src/app/cleavejs/cleavejs.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: CleavejsComponent },
+  { path: 'cleavejs', component: CleavejsComponent },
+  // { path: '**', component: PageNotFoundComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+
+```
+
+
+

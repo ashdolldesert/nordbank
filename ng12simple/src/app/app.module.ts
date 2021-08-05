@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { NgxCleaveDirectiveModule } from 'ngx-cleave-directive';
+import { CleavejsComponent } from './cleavejs/cleavejs.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CleavejsComponent
   ],
   imports: [
     BrowserModule,
