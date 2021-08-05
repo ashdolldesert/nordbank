@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { NgxCleaveDirectiveModule } from 'ngx-cleave-directive';
 import { CleavejsComponent } from './cleavejs/cleavejs.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CleavejsComponent
+    CleavejsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

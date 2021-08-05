@@ -69,6 +69,7 @@ Copy and paste app.component.** to cleavejs.component.**
 - cleavejs.component.html
 - cleavejs.component.scss
 - cleavejs.component.ts
+- app.module.ts
 
 ## Setting up routing for cleave.js
 
@@ -92,5 +93,30 @@ export class AppRoutingModule {}
 
 ```
 
+### lets try
 
+[localhost:4200/cleavejs](http://localhost:4200/cleavejs)
 
+## Create home page
+
+```
+ng g component home
+```
+
+- home.component.html
+- home.component.spec.ts
+- home.component.ts
+- home.component.scs
+- app.module.ts
+
+### Add routelink
+
+```html
+<a [routerLink]="['/cleavejs']">cleavejs</a>
+```
+
+### lets try
+
+[localhost:4200/](http://localhost:4200/)
+
+[localhost:4200/home](http://localhost:4200/home)
