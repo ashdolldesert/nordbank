@@ -1,0 +1,20 @@
+{
+  "name": "dockerspringboot",
+  "version": "1.0.0",
+  "description": "docker spring boot helloworld!",
+  "main": "index.js",
+  "scripts": {
+    "startup": "mvn spring-boot:run",
+    "build": "mvn clean package",
+    "docker-build": "mvn clean package && docker build -t dockerspringboot .",
+    "docker-rm": "docker rm docker-spring-boot",
+    "docker-run": "docker run -d -p 8080:8080 --name docker-spring-boot dockerspringboot",
+    "docker-start": "docker start docker-spring-boot",
+    "docker-stop": "docker stop docker-spring-boot",
+    "docker-tag": "docker tag dockerspringboot charles2beta/dockerspringboot",
+    "docker-push": "docker push charles2beta/dockerspringboot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Yen",
+  "license": "ISC"
+}
