@@ -1,0 +1,14 @@
+{
+  "name": "ngwebap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-ap": "cd ap/ && mvn install",
+    "startup-ap": "mvn clean spring-boot:run -f pom-ap.xml",
+    "test-ap": "mvn test -f pom-ap.xml",
+    "deploy-ap": "mvn clean package -e -f pom-ap.xml"
+  },
+  "author": "",
+  "license": "ISC"
+}
