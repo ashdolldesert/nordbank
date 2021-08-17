@@ -15,6 +15,7 @@
 
 	<modules>
 		<module>ap</module>
+		<module>common</module>
 	</modules>
 
 </project>
