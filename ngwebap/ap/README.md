@@ -10,7 +10,7 @@
 
 ---
 
-### 1-2. Create an empty readme.MD
+### 1-2. Create an empty README.md
 
 ![ngwebap create ap 1](https://user-images.githubusercontent.com/17401732/129373889-535a9827-c6c4-46ff-93c7-462b7ab746f4.png)
 
