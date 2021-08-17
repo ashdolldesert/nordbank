@@ -7,7 +7,11 @@
     "install-ap": "cd ap/ && mvn install",
     "startup-ap": "mvn clean spring-boot:run -f pom-ap.xml",
     "test-ap": "mvn test -f pom-ap.xml",
-    "deploy-ap": "mvn clean package -e -f pom-ap.xml"
+    "deploy-ap": "mvn clean package -e -f pom-ap.xml",
+    "install-web": "cd web/ && mvn install",
+    "startup-web": "mvn clean spring-boot:run -f pom-web.xml",
+    "test-web": "mvn test -f pom-web.xml",
+    "deploy-web": "mvn clean package -e -f pom-web.xml"
   },
   "author": "",
   "license": "ISC"
