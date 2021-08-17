@@ -2,23 +2,23 @@
 
 ---
 
-## 1. create common
+## 3. create common
 
 ---
 
-### 1-1. Create an empty project
+### 3-1. Create an empty project
 
 ![[ngwebap create common 0.png]]
 
 ---
 
-### 1-2. Create an empty README.md
+### 3-2. Create an empty README.md
 
 ![[ngwebap create common 1.png]]
 
 ---
 
-### 1-4. Spring Initializr: Create a Maven Project
+### 3-4. Spring Initializr: Create a Maven Project
 
 ---
 
@@ -62,7 +62,7 @@
 
 ---
 
-### 1-5. Update pom-ap.xml, pom-web.xml
+### 3-5. Update pom-ap.xml, pom-web.xml
 
 ![[ngwebap create common 16.png]]
 
@@ -72,13 +72,13 @@
 
 ---
 
-### 1-5. Add scripts in package.json
+### 3-5. Add scripts in package.json
 
 ![[ngwebap create common 18.png]]
 
 ---
 
-### 1-10. Lets try install-common
+### 3-10. Lets try install-common
 
 ![[ngwebap create common 20.png]]
 
