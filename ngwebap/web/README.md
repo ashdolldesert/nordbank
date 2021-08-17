@@ -2,23 +2,23 @@
 
 ---
 
-## 1. create web
+## 2. create web
 
 ---
 
-### 1-1. Create an empty project
+### 2-1. Create an empty project
 
 ![ngwebap create web 0](https://user-images.githubusercontent.com/17401732/129671322-7434a242-2be2-4aaf-a5d2-7e6e5b6c623c.png)
 
 ---
 
-### 1-2. Create an empty README.md
+### 2-2. Create an empty README.md
 
 ![ngwebap create web 1](https://user-images.githubusercontent.com/17401732/129671340-0fc51063-2c00-478e-ada5-2b39fb94db36.png)
 
 ---
 
-### 1-4. Spring Initializr: Create a Maven Project
+### 2-4. Spring Initializr: Create a Maven Project
 
 ---
 
@@ -66,31 +66,31 @@
 
 ---
 
-### 1-5. Add scripts in package.json
+### 2-5. Add scripts in package.json
 
 ![ngwebap create web 16](https://user-images.githubusercontent.com/17401732/129671504-e2e18c62-6251-4791-bb96-16925ee48b33.png)
 
 ---
 
-### 1-6. Create pom-web.xml
+### 2-6. Create pom-web.xml
 
 ![ngwebap create web 17](https://user-images.githubusercontent.com/17401732/129671514-a910d550-c7df-406d-82e2-75f7d890e7fc.png)
 
 ---
 
-### 1-7. Update pom.xml
+### 2-7. Update pom.xml
 
 ![ngwebap create web 18](https://user-images.githubusercontent.com/17401732/129671527-6c928bb6-26b3-4d7f-9b5b-91f989d62790.png)
 
 ---
 
-### 1-8. Setup application.properties
+### 2-8. Setup application.properties
 
 ![ngwebap create web 19](https://user-images.githubusercontent.com/17401732/129671541-fff90b34-dbdf-43a6-bcc7-c1e4062e3772.png)
 
 ---
 
-### 1-9. Setup application-site.properties
+### 2-9. Setup application-site.properties
 
 ![ngwebap create web 20](https://user-images.githubusercontent.com/17401732/129671552-ddec28d6-88d4-4847-bc45-f109da13db0a.png)
 
@@ -100,7 +100,7 @@
 
 ---
 
-### 1-10. Lets try startup-ap
+### 2-10. Lets try startup-ap
 
 ![ngwebap create web 22](https://user-images.githubusercontent.com/17401732/129671576-e01e0ff0-4b12-4857-80bd-e92f7b642e13.png)
 
