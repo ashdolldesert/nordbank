@@ -8,13 +8,13 @@
 
 ### 1-1. Create an empty project
 
-![[ngwebap create web 0.png]]
+![ngwebap create web 0](https://user-images.githubusercontent.com/17401732/129671322-7434a242-2be2-4aaf-a5d2-7e6e5b6c623c.png)
 
 ---
 
 ### 1-2. Create an empty README.md
 
-![[ngwebap create web 1.png]]
+![ngwebap create web 1](https://user-images.githubusercontent.com/17401732/129671340-0fc51063-2c00-478e-ada5-2b39fb94db36.png)
 
 ---
 
@@ -22,88 +22,88 @@
 
 ---
 
-![[ngwebap create web 5.png]]
+![ngwebap create web 5](https://user-images.githubusercontent.com/17401732/129671350-46fe7841-211c-499c-be02-89b64802f505.png)
 
 ---
 
-![[ngwebap create web 6.png]]
+![ngwebap create web 6](https://user-images.githubusercontent.com/17401732/129671362-4f08c504-0102-4840-957f-2b9b6cdbb185.png)
 
 ---
 
-![[ngwebap create web 7.png]]
+![ngwebap create web 7](https://user-images.githubusercontent.com/17401732/129671377-dc9f390e-7ba9-495e-ab21-730c4cfaffd8.png)
 
 ---
 
-![[ngwebap create web 8.png]]
+![ngwebap create web 8](https://user-images.githubusercontent.com/17401732/129671387-41a9a2fa-f52f-4b9c-a79d-e77c0288f00f.png)
 
 ---
 
-![[ngwebap create web 9.png]]
+![ngwebap create web 9](https://user-images.githubusercontent.com/17401732/129671403-e5ea818a-2229-49da-b7f0-fa8cb941c5c8.png)
 
 ---
 
-![[ngwebap create web 10.png]]
+![ngwebap create web 10](https://user-images.githubusercontent.com/17401732/129671421-cfc76f2a-704e-45e9-80fb-eefc6d9fdd25.png)
 
 ---
 
-![[ngwebap create web 11.png]]
+![ngwebap create web 11](https://user-images.githubusercontent.com/17401732/129671441-78a476a2-27eb-4e0d-bdb8-d093bc29d7af.png)
 
 ---
 
-![[ngwebap create web 12.png]]
+![ngwebap create web 12](https://user-images.githubusercontent.com/17401732/129671447-55a2ae8e-cc9e-4c85-8dd1-6b2cc1999d50.png)
 
 ---
 
-![[ngwebap create web 13.png]]
+![ngwebap create web 13](https://user-images.githubusercontent.com/17401732/129671457-5895f939-2f52-4c79-93fc-818c66d44348.png)
 
 ---
 
-![[ngwebap create web 14.png]]
+![ngwebap create web 14](https://user-images.githubusercontent.com/17401732/129671469-93e67787-dbb9-4a50-ba18-ae1c686f6d6f.png)
 
 ---
 
-![[ngwebap create web 15.png]]
+![ngwebap create web 15](https://user-images.githubusercontent.com/17401732/129671487-b329788c-f47d-452d-a4a7-19e6d50111a8.png)
 
 ---
 
 ### 1-5. Add scripts in package.json
 
-![[ngwebap create web 16.png]]
+![ngwebap create web 16](https://user-images.githubusercontent.com/17401732/129671504-e2e18c62-6251-4791-bb96-16925ee48b33.png)
 
 ---
 
 ### 1-6. Create pom-web.xml
 
-![[ngwebap create web 17.png]]
+![ngwebap create web 17](https://user-images.githubusercontent.com/17401732/129671514-a910d550-c7df-406d-82e2-75f7d890e7fc.png)
 
 ---
 
 ### 1-7. Update pom.xml
 
-![[ngwebap create web 18.png]]
+![ngwebap create web 18](https://user-images.githubusercontent.com/17401732/129671527-6c928bb6-26b3-4d7f-9b5b-91f989d62790.png)
 
 ---
 
 ### 1-8. Setup application.properties
 
-![[ngwebap create web 19.png]]
+![ngwebap create web 19](https://user-images.githubusercontent.com/17401732/129671541-fff90b34-dbdf-43a6-bcc7-c1e4062e3772.png)
 
 ---
 
 ### 1-9. Setup application-site.properties
 
-![[ngwebap create web 20.png]]
+![ngwebap create web 20](https://user-images.githubusercontent.com/17401732/129671552-ddec28d6-88d4-4847-bc45-f109da13db0a.png)
 
 ---
 
-![[ngwebap create web 21.png]]
+![ngwebap create web 21](https://user-images.githubusercontent.com/17401732/129671566-fbb43857-04a0-4bdb-a378-769ffff6d257.png)
 
 ---
 
 ### 1-10. Lets try startup-ap
 
-![[ngwebap create web 22.png]]
+![ngwebap create web 22](https://user-images.githubusercontent.com/17401732/129671576-e01e0ff0-4b12-4857-80bd-e92f7b642e13.png)
 
 ---
 
-![[ngwebap create web 23.png]]
+![ngwebap create web 23](https://user-images.githubusercontent.com/17401732/129671588-e678e5cb-73e3-4dd1-9b83-ae36962dc593.png)
