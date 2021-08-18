@@ -16,7 +16,7 @@ public class DockerspringbootApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication springApplication = new SpringApplication(DockerspringbootApplication.class);
-		springApplication.addListeners(new SpringBuiltInEventsListener());
+		// springApplication.addListeners(new SpringBuiltInEventsListener());
 		springApplication.run(args);
 	}
 
