@@ -123,3 +123,13 @@
 ### 5-2. add spring-boot-starter-security
 
 ### 5-3. bypass spring-boot-starter-security
+
+### 5-4. add httpclient, gson to common's pom.xml
+
+### 5-5. add HttpDao and update CommonController
+
+### 5-6. add CakeController to ap
+
+### 5-7. test web's CommonController to ap's CakeController
+
+### 5-8. .gitignore ngwebap/logs
