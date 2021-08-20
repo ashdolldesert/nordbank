@@ -115,3 +115,11 @@
 ![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/129842954-6933ea14-a7ef-41b3-abb6-f84ce48f48c5.png)
 
 ---
+
+## 5. add security to web
+
+### 5-1. add CommonController
+
+### 5-2. add spring-boot-starter-security
+
+### 5-3. bypass spring-boot-starter-security
