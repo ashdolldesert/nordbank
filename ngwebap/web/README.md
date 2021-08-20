@@ -116,11 +116,13 @@
 
 ### 4-1. add logback.spring.xml
 
-![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/129842954-6933ea14-a7ef-41b3-abb6-f84ce48f48c5.png)
+![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/130218269-b50f65f9-0b15-4cdd-b1c1-531dc057e673.png)
 
 ---
 
 ### 4-2. .gitignore ngwebap/logs
+
+![ngwebap add logback to ap web 2](https://user-images.githubusercontent.com/17401732/130218312-f3065f0d-3038-4cdc-84ad-d52c68f2d2be.png)
 
 ---
 
