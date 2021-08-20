@@ -92,6 +92,12 @@
 
 ### 5-4. add httpclient, gson to common's pom.xml
 
+![ngwebap 5  add security to web 5](https://user-images.githubusercontent.com/17401732/130217854-cd9f00fb-9fa1-444a-b6d9-3253eb0fcea9.png)
+
 ---
 
 ### 5-7. add WebResult to common
+
+![ngwebap 5  add security to web 8](https://user-images.githubusercontent.com/17401732/130217912-aed2d2f3-bcca-4e47-81c8-92acc7a30740.png)
+
+---
