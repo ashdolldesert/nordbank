@@ -112,14 +112,77 @@
 
 ## 4. add logback to ap web
 
-![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/129842954-6933ea14-a7ef-41b3-abb6-f84ce48f48c5.png)
+---
+
+### 4-1. add logback.spring.xml
+
+![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/130218269-b50f65f9-0b15-4cdd-b1c1-531dc057e673.png)
+
+---
+
+### 4-2. .gitignore ngwebap/logs
+
+![ngwebap add logback to ap web 2](https://user-images.githubusercontent.com/17401732/130218312-f3065f0d-3038-4cdc-84ad-d52c68f2d2be.png)
 
 ---
 
 ## 5. add security to web
 
+---
+
 ### 5-1. add CommonController
+
+![ngwebap 5  add security to web 1](https://user-images.githubusercontent.com/17401732/130218702-a0343694-816a-40ce-bbf1-d99958b591c2.png)
+
+---
+
+![ngwebap 5  add security to web 2](https://user-images.githubusercontent.com/17401732/130218708-30ef0a83-2d21-4376-b6be-8dd4e80de4d3.png)
+
+---
 
 ### 5-2. add spring-boot-starter-security
 
+![ngwebap 5  add security to web 3](https://user-images.githubusercontent.com/17401732/130218726-d4457b2a-d084-44fc-8b1d-dd08e2caf70a.png)
+
+---
+
 ### 5-3. bypass spring-boot-starter-security
+
+![ngwebap 5  add security to web 4](https://user-images.githubusercontent.com/17401732/130218742-b5ab6791-5809-480d-9b25-45e305792d04.png)
+
+---
+
+### 5-4. add httpclient, gson to common's pom.xml
+
+![ngwebap 5  add security to web 5](https://user-images.githubusercontent.com/17401732/130218755-840697df-e5b2-4e2b-bffc-bcfe3dde353e.png)
+
+---
+
+### 5-5. add HttpDao and update CommonController
+
+![ngwebap 5  add security to web 6](https://user-images.githubusercontent.com/17401732/130218766-4e790718-95db-462c-ab54-7f8fccbdfe4d.png)
+
+---
+
+### 5-6. add GlobalConfig and web.properties
+
+![ngwebap 5  add security to web 7](https://user-images.githubusercontent.com/17401732/130218782-911c9e77-99a0-40f6-9436-0e0473f8ce0d.png)
+
+---
+
+### 5-7. add WebResult to common
+
+![ngwebap 5  add security to web 8](https://user-images.githubusercontent.com/17401732/130218798-1284ba97-1f7f-4938-aafc-36762cbd9cd2.png)
+
+---
+
+### 5-8. add CakeController to ap
+
+![ngwebap 5  add security to web 9](https://user-images.githubusercontent.com/17401732/130218809-4c571ce2-1a8d-4447-ad75-057e5e1a56d9.png)
+
+---
+
+### 5-9. test web's CommonController to ap's CakeController
+
+![ngwebap 5  add security to web 10](https://user-images.githubusercontent.com/17401732/130218826-a7a14354-0ab0-46d9-83db-85a8b6982997.png)
+

@@ -140,6 +140,26 @@
 
 ## 4. add logback to ap web
 
-![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/129842954-6933ea14-a7ef-41b3-abb6-f84ce48f48c5.png)
+---
+
+### 4-1. add logback.spring.xml
+
+![ngwebap add logback to ap web 1](https://user-images.githubusercontent.com/17401732/130218015-e82310d2-1eb8-449c-b2c9-724e62c1d889.png)
+
+---
+
+### 4-2. .gitignore ngwebap/logs
+
+![ngwebap add logback to ap web 2](https://user-images.githubusercontent.com/17401732/130218038-dd95b57a-18ad-47f2-8f7d-20a94f540efd.png)
+
+---
+
+## 5. add security to web
+
+---
+
+### 5-6. add CakeController to ap
+
+![ngwebap 5  add security to web 9](https://user-images.githubusercontent.com/17401732/130218128-f732114d-510b-4cad-9ec6-aa89772d584c.png)
 
 ---
