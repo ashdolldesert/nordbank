@@ -3,6 +3,10 @@ package com.nordbank.ngwebap.web.jwt;
 import java.util.ArrayList;
 
 import com.google.gson.Gson;
+import com.nordbank.ngwebap.common.dto.WebResult;
+import com.nordbank.ngwebap.common.dto.response.CaseResp;
+import com.nordbank.ngwebap.common.dto.view.LoginView;
+import com.nordbank.ngwebap.web.dao.HttpDao;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,10 +36,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         LoginView ac = (LoginView) authentication.getPrincipal();
         Gson gson = new Gson();
         String reqString = gson.toJson(ac);
-        if (!CheckUtil.check(ac)) {
+        if (ac == null) {
             throw new BadCredentialsException("Authentication Failed.");
         } else {
-            String resp = httpDao.getAPResponseNoAuth("stp", "initPlContract", reqString);
+            String resp = httpDao.getAPResponseNoAuth("login", reqString);
             logger.info("ap resp:" + resp);
             WebResult result = gson.fromJson(resp, WebResult.class);
             if (result.getStatus() == 0 && !result.getResult().equals("")) {

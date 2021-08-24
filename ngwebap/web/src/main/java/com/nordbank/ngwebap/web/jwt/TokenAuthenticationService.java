@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 import com.nimbusds.jose.crypto.DirectDecrypter;
 import com.nimbusds.jwt.EncryptedJWT;
+import com.nordbank.ngwebap.common.SystemConst;
+import com.nordbank.ngwebap.common.dto.WebResult;
+import com.nordbank.ngwebap.common.dto.response.CaseResp;
+import com.nordbank.ngwebap.common.dto.response.CaseRespInit;
+import com.nordbank.ngwebap.common.util.TokenService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +34,7 @@ public class TokenAuthenticationService {
             response.setCharacterEncoding("UTF-8");
             response.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
             response.setStatus(HttpServletResponse.SC_OK);
-            CaseInitResp resp = new CaseInitResp(jwt, caseResp.getRouteGo(), caseResp.getInitBankInfo(), caseResp.getRateDatas());
+            CaseRespInit resp = new CaseRespInit(jwt);
             PrintWriter pw = response.getWriter();            
             pw.print(WebResult.GetSuccessResult(resp));
 

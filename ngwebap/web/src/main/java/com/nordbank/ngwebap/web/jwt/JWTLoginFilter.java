@@ -1,26 +1,29 @@
 package com.nordbank.ngwebap.web.jwt;
 
+import static com.nordbank.ngwebap.common.util.RequestUtil.getIpAddr;
+
 import java.io.IOException;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.nordbank.ngwebap.common.dto.WebResult;
+import com.nordbank.ngwebap.common.dto.view.LoginView;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import nl.basjes.parse.useragent.UserAgent;
 import nl.basjes.parse.useragent.UserAgentAnalyzer;
-
-import static com.nordbank.ngwebap.common.util.RequestUtil.getIpAddr;
 
 public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
     

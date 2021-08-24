@@ -2,13 +2,14 @@ package com.nordbank.ngwebap.common.util;
 
 import java.util.Date;
 
-import com.kgi.eopend3.common.SystemConst;
 import com.nimbusds.jose.EncryptionMethod;
 import com.nimbusds.jose.JWEAlgorithm;
 import com.nimbusds.jose.JWEHeader;
 import com.nimbusds.jose.crypto.DirectEncrypter;
 import com.nimbusds.jwt.EncryptedJWT;
 import com.nimbusds.jwt.JWTClaimsSet;
+import com.nordbank.ngwebap.common.SystemConst;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,5 +1,7 @@
 package com.nordbank.ngwebap.common.dto;
 
+import com.google.gson.GsonBuilder;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -39,7 +41,7 @@ public class WebResult {
         // if(result==null){
             result = "";
         // }
-        return GetResultString(0, "成功", result);
+        return GetResultString(0, "OK", result);
     }
     public static String GetSuccessResult() {
         return GetSuccessResult(null);
@@ -52,6 +54,6 @@ public class WebResult {
         return GetResultString(9, msg, null);
     }
     public static String GetSystemFailResult(){
-        return GetResultString(99, "系統錯誤", null);
+        return GetResultString(99, "System Error", null);
     }
 }
