@@ -1,9 +1,9 @@
 package com.nordbank.ngwebap.web.config;
 
-import com.kgi.eopend3.web.jwt.CustomAuthenticationProvider;
-import com.kgi.eopend3.web.jwt.JWTAuthenticationFilter;
-import com.kgi.eopend3.web.jwt.JWTLoginFilter;
-import com.kgi.eopend3.web.jwt.JwtAuthenticationEntryPoint;
+import com.nordbank.ngwebap.web.jwt.CustomAuthenticationProvider;
+import com.nordbank.ngwebap.web.jwt.JWTAuthenticationFilter;
+import com.nordbank.ngwebap.web.jwt.JWTLoginFilter;
+import com.nordbank.ngwebap.web.jwt.JwtAuthenticationEntryPoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
