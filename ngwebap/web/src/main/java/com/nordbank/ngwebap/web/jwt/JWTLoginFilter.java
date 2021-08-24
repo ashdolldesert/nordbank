@@ -20,6 +20,8 @@ import org.slf4j.LoggerFactory;
 import nl.basjes.parse.useragent.UserAgent;
 import nl.basjes.parse.useragent.UserAgentAnalyzer;
 
+import static com.nordbank.ngwebap.common.util.RequestUtil.getIpAddr;
+
 public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
     
     private Logger logger = LoggerFactory.getLogger(this.getClass());
