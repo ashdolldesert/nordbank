@@ -27,4 +27,3 @@ public class MyAppWebMvcConfigurer implements WebMvcConfigurer {
             });
     }
 }
-}
