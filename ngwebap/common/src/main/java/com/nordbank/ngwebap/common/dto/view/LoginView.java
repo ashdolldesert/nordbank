@@ -8,10 +8,9 @@ import lombok.Setter;
 public class LoginView {
   
     private String uniqType;
-    private String entry;
-    private String entryOther;
-    private String idno ;
+    private String idno;
     private String birthday ;
+    private String phone;
     private String ipAddress ;
     private String browser ;
     private String platform ;

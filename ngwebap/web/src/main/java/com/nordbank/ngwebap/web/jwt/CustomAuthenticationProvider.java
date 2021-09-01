@@ -40,7 +40,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
             throw new BadCredentialsException("Authentication Failed.");
         } else {
             String resp = httpDao.getAPResponseNoAuth("login", reqString);
-            logger.info("ap resp:" + resp);
+            logger.info("### ap resp:" + resp);
             WebResult result = gson.fromJson(resp, WebResult.class);
             if (result.getStatus() == 0 && !result.getResult().equals("")) {
                 String principal = gson.toJson(result.getResult());

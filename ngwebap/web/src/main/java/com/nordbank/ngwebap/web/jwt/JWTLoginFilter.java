@@ -3,6 +3,7 @@ package com.nordbank.ngwebap.web.jwt;
 import static com.nordbank.ngwebap.common.util.RequestUtil.getIpAddr;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -44,7 +45,9 @@ public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
     @Override
     public Authentication attemptAuthentication(HttpServletRequest req, HttpServletResponse res)
             throws AuthenticationException, IOException, ServletException {
-
+        // Scanner s = new Scanner(req.getInputStream()).useDelimiter("\\A");
+        // String result = s.hasNext() ? s.next() : "";
+        // logger.info(result);
         LoginView loginAuth = new ObjectMapper().readValue(req.getInputStream(), LoginView.class);
         loginAuth.setIpAddress(getIpAddr(req));
         

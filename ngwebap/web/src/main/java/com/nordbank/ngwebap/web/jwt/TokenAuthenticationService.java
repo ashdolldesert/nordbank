@@ -34,9 +34,13 @@ public class TokenAuthenticationService {
             response.setCharacterEncoding("UTF-8");
             response.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
             response.setStatus(HttpServletResponse.SC_OK);
+            logger.info("### jwt=" + jwt);
             CaseRespInit resp = new CaseRespInit(jwt);
-            PrintWriter pw = response.getWriter();            
-            pw.print(WebResult.GetSuccessResult(resp));
+            PrintWriter pw = response.getWriter();
+            logger.info("### resp=" + resp);
+            String result = WebResult.GetSuccessResult(resp);
+            logger.info("### result=" + result);
+            pw.print(result);
 
         } catch (Exception e) {
             logger.error("Unknown exception", e);

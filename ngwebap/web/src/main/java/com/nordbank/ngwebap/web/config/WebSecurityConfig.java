@@ -19,51 +19,51 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-// @Configuration
-// @EnableWebSecurity
-// @EnableGlobalMethodSecurity(prePostEnabled = true)
-// public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-
-//     @Autowired
-//     private JwtAuthenticationEntryPoint unauthorizedHandler;
-
-//     @Autowired
-//     private ApplicationContext appContext;
-
-//     @Override
-//     protected void configure(HttpSecurity http) throws Exception {
-//         http.cors()
-//                 .and().csrf().disable()
-//                 .authorizeRequests()
-//                 .anyRequest().authenticated()
-//                 .and().exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
-//                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-//                 .addFilterBefore(new JWTLoginFilter("/api/login", authenticationManager()), UsernamePasswordAuthenticationFilter.class)
-//                 .addFilterBefore(new JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
-//     }
-
-//     @Override
-//     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//         auth.authenticationProvider(new CustomAuthenticationProvider(appContext));
-//     }
-
-//     @Override
-//     public void configure(WebSecurity web) throws Exception {
-//         web.ignoring().antMatchers("/publicApi/**").antMatchers("/front/**");
-
-//     }
-
-//     @Bean
-//     public BCryptPasswordEncoder encoder() {
-//         return new BCryptPasswordEncoder();
-//     }
-
-// }
-
 @Configuration
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private JwtAuthenticationEntryPoint unauthorizedHandler;
+
+    @Autowired
+    private ApplicationContext appContext;
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.cors()
+                .and().csrf().disable()
+                .authorizeRequests()
+                .anyRequest().authenticated()
+                .and().exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
+                .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+                .addFilterBefore(new JWTLoginFilter("/api/login", authenticationManager()), UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(new JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+    }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.authenticationProvider(new CustomAuthenticationProvider(appContext));
+    }
+
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/**");
+        web.ignoring().antMatchers("/publicApi/**").antMatchers("/front/**");
+
     }
+
+    @Bean
+    public BCryptPasswordEncoder encoder() {
+        return new BCryptPasswordEncoder();
+    }
+
 }
+
+// @Configuration
+// public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+//     @Override
+//     public void configure(WebSecurity web) throws Exception {
+//         web.ignoring().antMatchers("/**");
+//     }
+// }
