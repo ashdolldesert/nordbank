@@ -12,4 +12,9 @@ public class HomeController {
     public String home() {
         return "{status: '0', message: '', result: {}}";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "{status: '0', message: 'login', result: {}}";
+    }
 }
