@@ -38,9 +38,9 @@ public class WebResult {
     }
 
     public static String GetSuccessResult(Object result) {
-        // if(result==null){
+        if(result==null){
             result = "";
-        // }
+        }
         return GetResultString(0, "OK", result);
     }
     public static String GetSuccessResult() {
