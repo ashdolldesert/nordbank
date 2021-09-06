@@ -186,18 +186,58 @@
 
 ![ngwebap 5  add security to web 10](https://user-images.githubusercontent.com/17401732/130218826-a7a14354-0ab0-46d9-83db-85a8b6982997.png)
 
+---
+
 ### 5-10. add CustomAuthenticationProvider
+
+![ngwebap 5  add security to web 11](https://user-images.githubusercontent.com/17401732/132220181-04a2804c-eb94-454c-90ca-9780a9a43ff7.png)
+
+---
 
 ### 5-11. add GrantedAuthorityImpl
 
+![ngwebap 5  add security to web 12](https://user-images.githubusercontent.com/17401732/132220199-298bf85f-f74f-40d5-b22c-cd1effb9832c.png)
+
+---
+
 ### 5-12. add JwtAuthenticationEntryPoint
+
+![ngwebap 5  add security to web 13](https://user-images.githubusercontent.com/17401732/132220232-dea02620-db47-4266-8154-9cc60be6ce3d.png)
+
+---
 
 ### 5-13. add JwtAuthenticationFilter
 
+![ngwebap 5  add security to web 14](https://user-images.githubusercontent.com/17401732/132220259-8594f1f6-aa13-451d-8a27-baee3b27531f.png)
+
+---
+
 ### 5-14. add JwtLoginFilter
 
-### 5-15. update WebSecurityConfig to enable security
+![ngwebap 5  add security to web 15](https://user-images.githubusercontent.com/17401732/132220295-12c05c71-85b6-4bdf-95fd-4f9cfb9bd1f5.png)
 
-### 5-16. test with postman POST /web/api/login to get jwt token
+---
 
-### 5-17. test with postman GET /web/api/cake/alive/ with jwt token
+### 5-15. add TokenAuthenticationService
+
+![ngwebap 5  add security to web 16](https://user-images.githubusercontent.com/17401732/132220307-cacc860d-990e-4cb7-8524-d84831e7804e.png)
+
+---
+
+### 5-16. update WebSecurityConfig to enable security
+
+![ngwebap 5  add security to web 17](https://user-images.githubusercontent.com/17401732/132220601-2be1b2d7-6309-475a-9b4d-278adf2ab9a5.png)
+
+---
+
+### 5-17. test with postman POST /web/api/login to get jwt token
+
+![ngwebap 5  add security to web 20](https://user-images.githubusercontent.com/17401732/132220626-cd8e3032-398c-477f-ba6b-b9d55f708d05.png)
+
+---
+
+### 5-18. test with postman GET /web/api/cake/alive/ with jwt token
+
+![ngwebap 5  add security to web 21](https://user-images.githubusercontent.com/17401732/132220657-ec96b5d8-0d9e-4e3f-beb7-f33a9ae23361.png)
+
+---
