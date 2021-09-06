@@ -1,8 +1,8 @@
 package com.nordbank.ngwebap.web.config;
 
 import com.nordbank.ngwebap.web.jwt.CustomAuthenticationProvider;
-import com.nordbank.ngwebap.web.jwt.JWTAuthenticationFilter;
-import com.nordbank.ngwebap.web.jwt.JWTLoginFilter;
+import com.nordbank.ngwebap.web.jwt.JwtAuthenticationFilter;
+import com.nordbank.ngwebap.web.jwt.JwtLoginFilter;
 import com.nordbank.ngwebap.web.jwt.JwtAuthenticationEntryPoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,8 +38,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and().exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .addFilterBefore(new JWTLoginFilter("/api/login", authenticationManager()), UsernamePasswordAuthenticationFilter.class)
-                .addFilterBefore(new JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(new JwtLoginFilter("/api/login", authenticationManager()), UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(new JwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 
     @Override
