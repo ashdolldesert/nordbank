@@ -186,3 +186,18 @@
 
 ![ngwebap 5  add security to web 10](https://user-images.githubusercontent.com/17401732/130218826-a7a14354-0ab0-46d9-83db-85a8b6982997.png)
 
+### 5-10. add CustomAuthenticationProvider
+
+### 5-11. add GrantedAuthorityImpl
+
+### 5-12. add JwtAuthenticationEntryPoint
+
+### 5-13. add JwtAuthenticationFilter
+
+### 5-14. add JwtLoginFilter
+
+### 5-15. update WebSecurityConfig to enable security
+
+### 5-16. test with postman POST /web/api/login to get jwt token
+
+### 5-17. test with postman GET /web/api/cake/alive/ with jwt token
